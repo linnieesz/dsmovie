@@ -1,17 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
+:root{
+    --tg-gray: #ddd;
+    --color-primary: #4D41C0;
+    --white: #fff;
+    --text-gray: #4a4a4a;
+}
+
 *{
+    margin: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
 
 html, body{
-    background-color: #ddd;
+    background-color: var(--tg-gray);
 }
 
 header{
-    background-color: #4D41C0;
-    color: #fff;
+    background-color: var(--color-primary);
+    color: var(--white);
+    height: 60px;
+    display: flex;
+    align-items: center;
 }
 
 nav{
@@ -20,8 +31,62 @@ nav{
     justify-content: space-between;
 }
 
+nav h1{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+nav a{
+    font-size: 12px;
+    font-weight: 400;
+}
 a, a:hover{
     color: unset;
     text-decoration: none;
 }
 
+.DSMovie-contact-container{
+    display: flex;
+    align-items: center;
+}
+
+.DSMovie-contact-container{
+    margin-right: 10px;
+}
+
+#DSMovie-cardlist{
+    padding: 40px 0;
+}
+
+.DSMovie-card{
+    width: 360px;
+}
+.DSMovie-card img{
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.DSMovie-card-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0 20px 0;
+    background-color: var(--white);
+    border-radius: 0 0 8px 8px;
+}
+
+.DSMovie-card-description h3{
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.DSMovie-btn, .DSMovie-btn:hover{
+    width: 180px;
+    height: 40px;
+    background-color: var(--color-primary);
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 4px;
+}
