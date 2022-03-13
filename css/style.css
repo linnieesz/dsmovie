@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
 :root{
@@ -59,7 +60,7 @@ a, a:hover{
 }
 
 .DSMovie-card{
-    width: 360px;
+    width: 100%;
 }
 .DSMovie-card img{
     width: 100%;
